@@ -207,3 +207,16 @@ input, textarea, button { font: inherit; color: inherit; }
 .dark .light .btn--outline { border-color: var(--soot); color: var(--soot); }
 .dark .light .btn--outline:hover { background: rgba(45, 53, 54, 0.06); }
 @media (max-width: 560px) { .photo--arch { height: 380px; border-radius: 190px 190px 24px 24px; } }
+
+/* Real photo in the hero */
+.photo--hero { background: #E9E2D3; }
+.photo--hero img { object-position: center 20%; }
+figure.photo { margin: 0; }
+
+/* Colleague quote set in the arch */
+.quote--arch { background: var(--mist); border-radius: 240px 240px 28px 28px; min-height: 420px; padding: 120px 40px 48px; display: flex; flex-direction: column; justify-content: flex-end; gap: 16px; }
+.quote--arch blockquote { font-size: clamp(30px, 3vw, 38px); line-height: 1.2; color: var(--soot); }
+.quote--arch figcaption { margin-top: 0; color: var(--soot); }
+@media (max-width: 560px) { .quote--arch { min-height: 0; padding: 96px 28px 36px; border-radius: 190px 190px 24px 24px; } }
+.hero__media { isolation: isolate; }
+.accent-circle { z-index: -1; }
